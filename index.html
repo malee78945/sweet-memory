@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory of Us 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="openSound" loop>
+        <source src="open.mp3" type="audio/mpeg">
+    </audio>
+
+    <img src="https://media.tenor.com/5Qq9.gif" class="cute-char">
+
+    <div id="start">
+        <div class="envelope" onclick="openLetter()">
+            💌
+            <p>เปิดจดหมายสิ</p>
+        </div>
+    </div>
+
+    <div id="letter" class="hidden">
+        <div class="card">
+            <h2 class="title">บันทึกความทรงจำ 💕</h2>
+            <div class="input-group">
+                <input type="text" id="nameInput" required placeholder=" ">
+                <label>ชื่อเล่นคนเก่ง 💖</label>
+            </div>
+            <div class="input-group">
+                <input type="date" id="firstDate" required>
+                <label style="top: -10px; font-size: 12px;">วันที่เริ่มคุยกัน 🗓️</label>
+            </div>
+            <button onclick="goToLove()">💌 ดูความทรงจำ</button>
+        </div>
+    </div>
+
+    <div id="lovePage" class="hidden">
+        <h1 id="loveText"></h1>
+        <div id="heartShapeContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
